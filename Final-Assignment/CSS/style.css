@@ -1,0 +1,306 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #11253d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    position: relative;
+}
+
+header .logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .logo img {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #c78c06; 
+    border-radius: 5px;
+}
+
+header .search-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+header .search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+header .search-bar button {
+    background-color: #c78c06;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+#welcome {
+    text-align: left;
+    padding: 2rem;
+    background-color: #ffe6ac;
+}
+
+#welcome img {
+    max-width: 100%;
+    height: auto;
+}
+
+#welcome .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #c78c06;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Us Section */
+#about {
+    text-align: left;
+    padding: 2rem;
+    background-color: #ffe6ac;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+#services {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#services article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    background-color: #ffe6ac;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#services article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#services article h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#services article p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+#services .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    align-self: start;
+}
+/* Our Vision Section*/
+
+#vision {
+    text-align: left;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+#vision img {
+    max-width: 100%;
+    height: auto;
+}
+
+#vision .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #c78c06;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* Team Section */
+#team {
+    padding: 2rem;
+    text-align: center;
+}
+
+#team article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    background-color: #ffe6ac;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#team img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+#contact form {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #c78c06;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#contact table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#contact th,
+#contact td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: #11253d;
+    color: #c78c06;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* Responsive Design */
+@media (min-width: 760px) {
+    header nav ul {
+        flex-direction: row;
+    }
+    #services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    #services article {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    #services article img {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        width: 100%;
+    }
+    #services article .btn {
+        grid-column: 2;
+    }
+    #team{
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    #team article img {
+        width: 100%;
+    }
+}
